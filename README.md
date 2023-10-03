@@ -1,2 +1,2 @@
 # MathAPI
-Working with math and optimizations. 
+Will be built in Rust with axum. 
