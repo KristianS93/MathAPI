@@ -7,4 +7,4 @@ edition = "2021"
 
 [dependencies]
 infrastructure = { path= "../infrastructure" }
-fib_squence = { path = "../feature/fib_squence" }
+feature = { path = "../feature" }

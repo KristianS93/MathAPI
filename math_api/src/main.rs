@@ -1,14 +1,8 @@
-use fib_squence::add;
-use infrastructure::subtract;
+use feature::fib_sequence::fib_sequence::*;
+// use infrastructure::subtract;
 
 fn main() {
 
-    // subtract func
-    // add
-    let x = add(2, 4);
-    let y = subtract(6,2);
-
-
-    println!("Hello, world! add: {}, subtract {}", x, y);
-
+    println!("{}", nth_fibonacci(11));
+    println!("{:#?}", fib_sequence(5));
 }

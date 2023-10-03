@@ -1,3 +1,4 @@
 [workspace]
 workspace.resolver = "2"
-members = ['math_api', 'infrastructure', 'feature/*']
+
+members = ['math_api', 'infrastructure', 'feature']
