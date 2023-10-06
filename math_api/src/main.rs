@@ -5,6 +5,4 @@ use infrastructure::server::server::server;
 async fn main() {
 
     server().await;
-    // println!("{}", nth_fibonacci(11));
-    // println!("{:#?}", fib_sequence(5));
 }

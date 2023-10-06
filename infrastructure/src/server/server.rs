@@ -1,9 +1,8 @@
 use axum::{Router, routing::get};
-use feature::hello_world::hello_world_router::index;
+use feature::{hello_world::*,fib_sequence::*, common::feature_extension::AddRoute};
 
 pub async fn server() {
-    let app = Router::new().route("/", get(index));
-    let xd = route("xd", get(handler));
+    let app = Router::new().setup();
     println!("Listenig on http://localhost:3000/");
     axum::Server::bind(&"0.0.0.0:3000".parse().unwrap())
     .serve(app.into_make_service())
