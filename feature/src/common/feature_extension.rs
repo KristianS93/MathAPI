@@ -8,6 +8,6 @@ pub trait AddRoute {
 
 impl AddRoute for Router{
     fn setup(&self) -> Self {
-        self.setup_fib().setup_index()
+        self.clone().setup_fib().setup_index()
     }
 }

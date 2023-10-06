@@ -1,11 +1,10 @@
-use axum::response::Html;
+use axum::{response::Html, extract::Path};
 
 use super::fib_sequence::nth_fibonacci;
 
 
-pub async fn fib() -> String {
+pub async fn fib(Path(num): Path<usize>) -> String {
 
-    let num = 77;
     let x = nth_fibonacci(num);
     format!("{} Fibbonacci number is: {}", num, x)
 }
