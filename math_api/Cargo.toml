@@ -8,3 +8,5 @@ edition = "2021"
 [dependencies]
 infrastructure = { path= "../infrastructure" }
 feature = { path = "../feature" }
+axum = {  }
+tokio = { version = "1.32", features = ["full"]}
