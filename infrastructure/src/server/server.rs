@@ -3,7 +3,7 @@ use feature::{hello_world::*,fib_sequence::*, common::feature_extension::AddRout
 
 pub async fn server() {
     let app = Router::new().setup();
-    println!("Listenig on http://localhost:3000/");
+    println!("Listening on http://localhost:3000/");
     axum::Server::bind(&"0.0.0.0:3000".parse().unwrap())
     .serve(app.into_make_service())
     .await
