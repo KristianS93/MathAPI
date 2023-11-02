@@ -1,5 +1,5 @@
-use axum::{Router, routing::get};
-use feature::{hello_world::*,fib_sequence::*, common::feature_extension::AddRoute};
+use axum::Router;
+use feature::common::feature_extension::AddRoute;
 
 pub async fn server() {
     let app = Router::new().setup();
